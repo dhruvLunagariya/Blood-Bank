@@ -44,15 +44,14 @@
                 <td>{{t.unit}}</td>
                 <td>{{t.date}}</td>
                 {% if t.status == 'Approved' %}
-                <td><span class="label warning"> Approved</span></td>
+                <td><span class="label success"> Approved</span></td>
                 
                 {% elif t.status == 'Rejected' %}
-                <td><span class="label success">Rejected</span></td>
+                <td><span class="label warning">Rejected</span></td>
                 {% else %}
                 <td><span style="color: white;margin-left: 0px;" class="label info">Pending</span></td>
                 {% endif %}
-                
-
+                  
             </tr>
             {% endfor %}
 
